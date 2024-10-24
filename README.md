@@ -86,6 +86,13 @@ Upvote removed (vote cleared).
 
 **Actions Tab:**
 - Click "New"
-- In the Program/script field, enter the path to your Node.js executable. You can find it by running where node in your command prompt. It should look something like `C:\Program Files\nodejs\node.exe`
-- In the Add arguments field, enter the path to your bot script (**e.g., C:\Users\cosmicjellyfish\Desktop\Reddit Bot\reddit-bot.js**)
+- In the Program/script field, enter the full path to npm. You can find it by running `where npm` in your command prompt. It should look something like `"C:\Program Files\nodejs\npm.cmd"`
+- In the Add arguments field, enter `start`
+- In the Start in field, enter the path to your bot script (**e.g., C:\Users\cosmicjellyfish\Desktop\Reddit Bot**) *do not directly locate the .js script, leave it to find the package.json*
+>[!WARNING]
+> Do not add quotation (" ") marks to the Add Arguments or Start In field boxes
 - Click "OK"
+
+
+**Please note**: This won't run silently, if you set it up to run at 12pm daily, you will see a cmd window at 12pm to run the script. There is ways around this using `wscript` with a VBScript, alternatively you can also use Powershell and re-link to that script in Task scheduler instead.
+I've provided the basics, it's up to you on what you'd like to do.

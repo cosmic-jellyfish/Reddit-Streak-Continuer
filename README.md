@@ -10,38 +10,38 @@ This is a simple Reddit bot that upvotes a random post and removes the vote afte
 >[!WARNING]
 > You must create an app on Reddit to be able to utilise Reddit's API.
 
-1. **Set Up Reddit API Credentials**:
-    Create a Reddit **script** app at [https://www.reddit.com/prefs/apps](https://www.reddit.com/prefs/apps) and get your `clientId`, `clientSecret`, `username`, and `password`.
+### 1. **Set Up Reddit API Credentials**:
+- Create a Reddit **script** app at [https://www.reddit.com/prefs/apps](https://www.reddit.com/prefs/apps) and make note of your `clientId` (*personal use script id*), `clientSecret`, `username`, and `password`.
+  
+![image](https://github.com/user-attachments/assets/96d07c74-f20f-46f7-874b-13313798886e)
 
-
-
-
+*clientID / clientSecret have been created to show location, these aren't real*
 
 >[!NOTE]
 > Your redirect uri can be: http://localhost:8080
 
+---
 
-2. **Install Node.js**:
-   Download and install Node.js from [nodejs.org](https://nodejs.org/).
+### 2. **Install Node.js**:
+- Download and install Node.js from [nodejs.org](https://nodejs.org/).
 
-3. **Clone or Download this Repository**:
-   Download the files or clone the repository to your local machine.
+### 3. **Clone or Download this Repository**:
+- Download the files or clone the repository to your local machine.
 
-4. **Install Dependencies**:
-   Open a terminal in the project folder and run: `npm i`
+### 4. **Install Dependencies**:
+- Open a terminal in the project folder and run: `npm i`
 
-5. **Update config.json**:
-    Update the `config.json` file with your Reddit API credentials ( `clientId`, `clientSecret`), and your personal reddit username and password. You can also choose your subreddits here.. if you care.
+### 5. **Update config.json**:
+- Update the `config.json` file with your Reddit API credentials (`clientId`, `clientSecret`), and your personal reddit username and password. You can also choose your subreddits here.. if you care.
 
->[!INFO]
+>[!NOTE]
 > Your clientId is known as `personal use script id`
 
 
-6. **Run the Bot**:
-    In the terminal, run the following command: `npm start`
+### 6. **Run the Bot**:
+- In the terminal, run the following command: `npm start`
 
 You should see a terminal log of action:
-
 ```txt
 > reddit-bot@1.0.0 start
 > node reddit-bot.js
@@ -51,10 +51,10 @@ Upvoted post: Former OpenAI Staffer Says the Company Is Braking Copyright Law an
 Upvote removed (vote cleared).
 ```
 
-7. **Customisation**:
-   - You can change the timeout duration in the `reddit-bot.js` file. (*In case you want to have a longer time of it being upvoted*)
-   - You can change the list of subreddits in the `config.json` file.    
-   - Currently, it fetches a random post from - `'funny', 'pics', 'pcmasterrace', 'technology', 'gaming'` you can decrease or increase to whatever you wish.
+### 7. **Customisation**:
+- You can change the timeout duration in the `reddit-bot.js` file. (*In case you want to have a longer time of it being upvoted*)
+- You can change the list of subreddits in the `config.json` file.    
+- Currently, it fetches a random post from - `'funny', 'pics', 'pcmasterrace', 'technology', 'gaming'` you can decrease or increase to whatever you wish.
 
 
 ---
@@ -62,14 +62,14 @@ Upvote removed (vote cleared).
 
 
 **Open Task Scheduler:**
-> Press Win + R, type taskschd.msc, and press Enter to open Task Scheduler.
+- Press Win + R, type taskschd.msc, and press Enter to open Task Scheduler.
 
->[!INFO]
+>[!NOTE]
 > Alternatively, just search for Task Scheduler in windows search
 
 
 **Create a New Task:**
-> Click on "Create Task" on the far right sidebar (**Not Basic Task**)
+- Click on "Create Task" on the far right sidebar (**Not Basic Task**)
 
 
 ### Configuration:

@@ -1,0 +1,12 @@
+{
+  "name": "reddit-bot",
+  "version": "1.0.0",
+  "description": "A Reddit bot that upvotes a random post to maintain streaks.",
+  "main": "reddit-bot.js",
+  "scripts": {
+    "start": "node reddit-bot.js"
+  },
+  "dependencies": {
+    "snoowrap": "^1.23.0"
+  }
+}
